@@ -1,0 +1,22 @@
+.portfolio-thumb {
+    padding: 20px 24px;
+
+     /* стили заголовков в карточках портфолио */
+&__title {
+        margin-bottom: 4px;
+        color: $title-main-color;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+ }
+
+    /* стили названия типа проектов в карточках портфолио */
+&__subtitle {
+        color: $text-main-color;
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.88;
+}
+}
+

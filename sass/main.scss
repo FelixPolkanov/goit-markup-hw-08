@@ -1,0 +1,34 @@
+@import "./utils/variables";
+@import "./utils/placeholder";
+
+@import "./base/common";
+@import "./base/reset";
+
+@import "./components/hero-main-button";
+@import "./components/hero-modal";
+
+@import "./layout/header-container";
+@import "./layout/header-border";
+@import "./layout/header-logo";
+@import "./layout/header-navigation";
+@import "./layout/header-menu-current";
+@import "./layout/header-contacts";
+@import "./layout/header-icons";
+@import "./layout/hero-section-settings";
+@import "./layout/hero-modal-forms";
+@import "./layout/hero-modal-forms-checkbox";
+@import "./layout/hero-modal-submit-button";
+@import "./layout/advantage";
+@import "./layout/our-work";
+@import "./layout/our-team";
+@import "./layout/our-team-social-icons";
+@import "./layout/our-clients";
+@import "./layout/footer-container";
+@import "./layout/footer-logo";
+@import "./layout/footer-contacts";
+@import "./layout/footer-joinus";
+@import "./layout/footer-sign-up";
+@import "./layout/portfolio-header-menu-current";
+@import "./layout/portfolio-buttons-menu";
+@import "./layout/portfolio-cardset";
+@import "./layout/portfolio-cards-thumb";

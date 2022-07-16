@@ -1,0 +1,59 @@
+/* секция ЧЕМ МЫ ЗАНИМАЕМСЯ */
+.section--padding-reset {
+    padding-top: 0;
+
+}/* стили заголовка секции ЧЕМ МЫ ЗАНИМАЕМСЯ */
+.our-work-title {
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 50px;
+    color: $title-main-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.our-work-container {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+
+&__item {
+        display: flex;
+    }
+
+&__item:not(:last-child) {
+        margin-right: 30px;
+}
+    /* стили ярлыков на картинках в секции ЧЕМ МЫ ЗАНИМАЕМСЯ */
+&__thumb {
+    position: relative;
+    z-index: -1;
+}
+
+&__label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+&__label-text {
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $text-secondary-color;
+}
+}
+
+
+

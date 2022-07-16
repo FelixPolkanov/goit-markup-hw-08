@@ -1,0 +1,6 @@
+/* эффект присутствия в меню на портфолио  */
+
+.site-nav__highlightning--portfolio::after {
+    content: '';
+    width: 78px;
+}
