@@ -1,8 +1,7 @@
                 /* стили секции Постоянные клиенты */
 
 .our-clients-title {
-    
-    padding-top: 0;
+     padding-top: 0;
     margin-bottom: 30px;
     color: $title-main-color;
     font-weight: 700;
@@ -15,15 +14,15 @@
 .our-clients {
     display: flex;
     flex-wrap: wrap;
-    gap: 29px;
-}
+    gap: 30px;
+
 
               /* стили svg-иконок Постоянные клиенты */
 &__blocks {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
+    width: 209.6px;
     height: 92px;
     border: 1px solid $icon-main-color;
     border-radius: 4px;
@@ -44,7 +43,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 fill: $accent-color;
 }
 }
-
+}
 
 
 

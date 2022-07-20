@@ -123,8 +123,8 @@ p {
 /* oформление модального окна в hero */
 .modal {
   position: absolute;
-  height: 581px;
-  width: 528px;
+  height: 609px;
+  width: 450px;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -140,7 +140,7 @@ p {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -171,6 +171,24 @@ p {
 }
 .modal__icon-cross:hover, .modal__icon-cross:focus {
   fill: #2196f3;
+}
+
+/*задний фон модального окна в hero */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  -webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .button-mobmenu {
@@ -509,6 +527,9 @@ p {
           align-items: center;
   line-height: 1.71;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 /* скрытие оригинального окна чекбокса  */
@@ -752,11 +773,8 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 25px;
+  gap: 30px;
   /* стили svg-иконок Постоянные клиенты */
-}
-.our-clients .our-clients:last-child {
-  gap: 0px;
 }
 .our-clients__blocks {
   display: -webkit-box;
@@ -768,7 +786,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 210px;
+  width: 209.6px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -795,40 +813,32 @@ p {
 
 /* микс */
 .container--footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* стили  лого футера */
-.footer-logo-container {
-  margin-right: 0;
-  margin-bottom: 20px;
+.footer-box-container {
+  margin-bottom: 60px;
   padding-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 93px;
-  font-family: Raleway, sans-serif;
   color: #2196f3;
   text-decoration: none;
-  font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .footer-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 93px;
+  display: block;
+  margin-bottom: 20px;
   font-family: Raleway, sans-serif;
   color: #2196f3;
   text-decoration: none;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
 }
 
 .footer-logo-color {
@@ -836,11 +846,11 @@ p {
 }
 
 .footer-contacts {
-  padding-left: 0;
+  text-align: center;
 }
 .footer-contacts__item {
   padding-left: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .footer-contacts__adress {
   color: #ffffff;
@@ -866,9 +876,7 @@ p {
 
 /* раздел футера ПРИСОЕДИНЯЙТЕСЬ  */
 .footer-joinus {
-  padding-bottom: 0;
-  margin-left: 70px;
-  margin-bottom: 0;
+  text-align: center;
 }
 .footer-joinus__title {
   margin-bottom: 20px;
@@ -886,8 +894,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 0;
-  padding-right: 0;
+  margin-bottom: 60px;
 }
 .footer-social-network__icons:not(:last-child) {
   margin-right: 10px;
@@ -913,7 +920,7 @@ p {
 
 /* стили раздела футера "подпишись на рассылку" */
 .signup {
-  margin-left: 93px;
+  text-align: center;
 }
 .signup__title {
   margin-bottom: 20px;
@@ -924,16 +931,15 @@ p {
 }
 
 .footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 .footer-form__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 20px;
   padding-left: 16px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -961,9 +967,9 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-form__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   min-width: 200px;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -974,7 +980,6 @@ p {
           align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 12px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88px;

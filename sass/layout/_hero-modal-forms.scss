@@ -71,4 +71,85 @@
     align-items: center;
     line-height: 1.71;
     margin-bottom: 30px;
+        font-size: 12px;
+        line-height: 1.17;
+      letter-spacing: 0.03em
 }
+
+
+
+
+// .modal-labeltext {
+//     display: block;
+//     margin-bottom: 4px;
+//     font-size: 12px;
+//     line-height: 1.17;
+//     letter-spacing: 0.01em;
+// }
+
+// .modal-input {
+//     position: relative;
+//     margin-bottom: 10px;
+
+//     &__field {
+//         width: 100%;
+//         height: 40px;
+//         padding-left: 42px;
+//         padding-top: 12px;
+//         padding-bottom: 12px;
+//         border: 1px solid rgba(33, 33, 33, 0.2);
+//         border-radius: 4px;
+//         outline: transparent;
+
+//         .modal-input:focus-within & {
+//             border-color: $accent-color;
+//         }
+//     }
+// }
+
+
+// /* позиционирование иконок в формах импута */
+// .modal-input__icon {
+//     position: absolute;
+//     top: 50%;
+//     left: 15px;
+//     fill: black;
+//     transform: translateY(-50%);
+
+//     .modal-input:focus-within & {
+//         fill: $accent-color;
+//     }
+// }
+
+// .modal-textarea {
+//     margin-bottom: 20px;
+// }
+
+// .modal-textarea-field {
+//     width: 100%;
+//     height: 120px;
+//     padding: 12px 16px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
+//     resize: none;
+//     outline: transparent;
+// }
+
+// .modal-textarea-field::placeholder {
+//     font-size: 12px;
+//     line-height: 1.17;
+//     letter-spacing: 0.01em;
+//     color: rgba(117, 117, 117, 0.5);
+// }
+
+// .modal-textarea:focus-within .modal-textarea-field {
+//     border-color: $accent-color;
+// }
+
+// .modal-agreement-section {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     line-height: 1.71;
+//     margin-bottom: 30px;
+// }

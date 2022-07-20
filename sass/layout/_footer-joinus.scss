@@ -1,9 +1,9 @@
           /* раздел футера ПРИСОЕДИНЯЙТЕСЬ  */
 
 .footer-joinus {
-    padding-bottom: 0;
-    margin-left: 70px;
-    margin-bottom: 0;
+    // padding-bottom: 0;
+    //  margin-bottom: 0;
+    text-align: center;
 
 &__title {
         margin-bottom: 20px;
@@ -20,8 +20,7 @@
 .footer-social-network {
     display: flex;
     justify-content: center;
-    padding-left: 0;
-    padding-right: 0;
+   margin-bottom: 60px;
 
 &__icons:not(:last-child) {
         margin-right: 10px;
@@ -45,6 +44,58 @@
 }
 }
 }
+
+
+                //   /* раздел футера ПРИСОЕДИНЯЙТЕСЬ  */
+        
+                //   .footer-joinus {
+                //       padding-bottom: 0;
+                //       margin-left: 70px;
+                //       margin-bottom: 0;
+        
+                //       &__title {
+                //           margin-bottom: 20px;
+                //           font-size: 14px;
+                //           line-height: 1.14;
+                //           text-transform: uppercase;
+                //           color: $text-secondary-color;
+                //       }
+                //   }
+        
+        
+                //   /* розметка списка соц/сетей и заголовка футера */
+        
+                //   .footer-social-network {
+                //       display: flex;
+                //       justify-content: center;
+                //       padding-left: 0;
+                //       padding-right: 0;
+        
+                //       &__icons:not(:last-child) {
+                //           margin-right: 10px;
+                //       }
+        
+                //       &__elipse {
+                //           display: block;
+                //           border: none;
+                //           align-items: center;
+                //           padding: 12px;
+                //           width: 44px;
+                //           height: 44px;
+                //           border-radius: 50%;
+                //           fill: #ffffff;
+                //           background-color: rgba(255, 255, 255, 0.1);
+                //           transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+                //           &:hover,
+                //           &:focus {
+                //               background-color: $accent-color;
+        
+                //           }
+                //       }
+                //   }
+
+
 
 
 
