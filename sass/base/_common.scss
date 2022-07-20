@@ -15,23 +15,42 @@ max-width: 100%;
 height: auto;
 }
 
+/* общий класс для паддинга секций */
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+// /* общий класс для паддинга секций */
+// .section {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }
+
+/* указатель на ссылки */
+.button {
+    cursor: pointer;
+}
 /* общий класс для всех секций */
 .container {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+// контейнеры для разных устройств
+@media screen and (min-width: 480px) {
+        width: 480px;
+}
+
+   @media screen and (min-width: 768px) {
+       width: 768px;
+}
+
+   @media screen and (min-width: 1200px) {
     width: 1200px;
 }
-
-/* общий класс для паддинга секций */
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
-/* указатель на ссылки */
-.button {
-    cursor: pointer;
-}
+
+
 

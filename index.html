@@ -26,14 +26,73 @@
   <body>
     <header class="header-border">
       <div class="container container--header">
-        <nav class="navigation">
-          <!-- logo_header -->
-          <a class="navigation__logo1" href="./index.html"
-            >Web<span class="navigation__logo2">Studio</span></a
-          >
-          <!-- header_menu -->
-
+        <!-- <nav class="navigation"> -->
+        <!-- logo_header -->
+        <!-- <div class="header"> -->
+        <a class="navigation__logo1" href="./index.html"
+          >Web<span class="navigation__logo2">Studio</span></a
+        >
+        <!-- кнопка меню для мобверсии -->
+        <button
+          type="button"
+          class="button-mobmenu is-open"
+          data-menu-button
+          aria-expanded="true"
+          aria-controls="header-dropmenu"
+        >
+          <svg width="40" height="40" aria-label="переключатель меню">
+            <use
+              class="icon-burger-mobmenu"
+              href="./images/symbol-defs.svg#icon-burger-mobmenu"
+            ></use>
+            <use
+              class="icon-close-mobmenu"
+              href="./images/symbol-defs.svg#icon-close-mobmenu"
+            ></use>
+          </svg>
+        </button>
+        <div class="header-dropmenu is-open" data-menu id="header-dropmenu">
           <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__highlightning link" href="./index.html">
+                <span class="site-nav__titlehighlightning">Студия</span></a
+              >
+            </li>
+            <li class="site-nav__item"><a class="link" href="./portfolio.html">Портфолио</a></li>
+            <li class="site-nav__item"><a class="link" href="">Контакты</a></li>
+          </ul>
+
+          <!-- header-contacts -->
+          <ul class="header-contacts">
+            <li class="header-contacts__item">
+              <a href="tel:+380961111111" class="header-contacts__link1 link"> +38 099 111 11 11</a>
+            </li>
+            <li class="header-contacts__item">
+              <a href="mailto:info@devstudio.com" class="header-contacts__link2 link">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="header-contacts__social">
+            <li class="header-contacts__social-item">
+              <a href=" " class="header-contacts__socialnet"> Instagram</a>
+            </li>
+            <li class="header-contacts__social-item">
+              <a href=" " class="header-contacts__socialnet"> Twitter</a>
+            </li>
+            <li class="header-contacts__social-item">
+              <a href=" " class="header-contacts__socialnet"> Facebook</a>
+            </li>
+            <li class="header-contacts__social-item">
+              <a href=" " class="header-contacts__socialnet"> LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <ul class="header-contacts">
+          </div> -->
+        <!-- header_menu -->
+        <!-- <ul class="site-nav">
             <li class="site-nav__item">
               <a class="site-nav__highlightning link" href="./index.html"
                 ><span class="site-nav__titlehighlightning">Студия</span></a
@@ -42,11 +101,11 @@
             <li class="site-nav__item"><a class="link" href="./portfolio.html">Портфолио</a></li>
             <li class="site-nav__item"><a class="link" href="">Контакты</a></li>
           </ul>
-        </nav>
+
+        <!-- </nav> -->
         <!-- header-contacts -->
 
-        <ul class="header-contacts">
-          <li class="header-contacts__item">
+        <!-- <li class="header-contacts__item">
             <a href="mailto:info@devstudio.com" class="header-contacts__link link">
               <svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
@@ -60,7 +119,7 @@
               >+38 099 111 11 11</a
             >
           </li>
-        </ul>
+        </ul> -->
       </div>
     </header>
 
@@ -196,7 +255,7 @@
       </section>
 
       <!-- section_3 -->
-      <section class="section section--padding-reset">
+      <section class="section section--padding-reset our-work-hidden">
         <div class="container">
           <h2 class="our-work-title">Чем мы занимаемся</h2>
           <ul class="our-work-container list">
@@ -237,7 +296,7 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-container list">
             <li class="team-container__item">
-              <img src="./images/staf/staf1.jpg" alt="ДИЗАЙНЕР" width="270" />
+              <img src="./images/staf/staf1.jpg" alt="ДИЗАЙНЕР" width="450" />
               <div class="team-container__thumb">
                 <h3 class="team-container__employee">Игорь Демьяненко</h3>
                 <p class="team-container__position">Product Designer</p>
@@ -272,7 +331,7 @@
             </li>
 
             <li class="team-container__item">
-              <img src="./images/staf/staf2.jpg" alt="ФРОНТЕНД РАЗРАБОТЧИК" width="270" />
+              <img src="./images/staf/staf2.jpg" alt="ФРОНТЕНД РАЗРАБОТЧИК" width="450" />
               <div class="team-container__thumb">
                 <h3 class="team-container__employee">Ольга Репина</h3>
                 <p class="team-container__position">Frontend Developer</p>
@@ -306,7 +365,7 @@
             </li>
 
             <li class="team-container__item">
-              <img src="./images/staf/staf3.jpg" alt="МАРКЕТИНГ" width="270" />
+              <img src="./images/staf/staf3.jpg" alt="МАРКЕТИНГ" width="450" />
               <div class="team-container__thumb">
                 <h3 class="team-container__employee">Николай Тарасов</h3>
                 <p class="team-container__position">Frontend Developer</p>
@@ -341,7 +400,7 @@
             </li>
 
             <li class="team-container__item">
-              <img src="./images/staf/staf4.jpg" alt="ЮИ ДИЗАЙНЕР" width="270" />
+              <img src="./images/staf/staf4.jpg" alt="ЮИ ДИЗАЙНЕР" width="450" />
               <div class="team-container__thumb">
                 <h3 class="team-container__employee">Михаил Ермаков</h3>
                 <p class="team-container__position">Frontend Developer</p>
@@ -513,5 +572,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
