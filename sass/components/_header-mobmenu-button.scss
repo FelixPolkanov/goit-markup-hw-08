@@ -1,28 +1,33 @@
 .button-mobmenu{
     display: inline-flex;
-    z-index:1;
+    z-index: 1;
     margin: 0;
     padding: 0;
     border: none;
-    background-color: transparent;
-}
+    background-color: transparent; 
 
-.button-mobmenu .icon-close-mobmenu{
+    @media screen and (min-width: 768px) {
+    display: none;    
+    }
+
+
+& .icon-close-mobmenu{
     display: none;
 }
 
-.button-mobmenu.is-open .icon-close-mobmenu {
+&.is-open .icon-close-mobmenu {
     display: block;
    
 }
-.button-mobmenu.is-open:hover .icon-close-mobmenu,
-.button-mobmenu.is-open:focus .icon-close-mobmenu {
+&.is-open:hover .icon-close-mobmenu,
+&.is-open:focus .icon-close-mobmenu {
  fill: $accent-color;
 }
 
-.button-mobmenu.is-open .icon-burger-mobmenu {
+&.is-open .icon-burger-mobmenu {
 display: none;
 }
-.button-mobmenu:focus .icon-burger-mobmenu{
+&:focus .icon-burger-mobmenu{
 fill: $accent-color;
+}
 }

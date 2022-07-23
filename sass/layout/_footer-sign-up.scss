@@ -3,6 +3,11 @@
 .signup {
    text-align: center;
 
+@media screen and (min-width: 768px) {
+        // display: block;
+        // flex-wrap: wrap;
+    }
+
 &__title {
         margin-bottom: 20px;
         font-weight: 700;
@@ -29,6 +34,11 @@ margin-bottom: 20px;
         background-color: #2f303a;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
+
+@media screen and (min-width: 768px) {
+width: 450px;
+}
+
 }
 &__input::placeholder {
     color: rgba(255, 255, 255, 0.6);

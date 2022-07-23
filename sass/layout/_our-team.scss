@@ -18,10 +18,15 @@
 
 .team-container {
     display: block;
-    // width: 480px;
     box-sizing: border-box;
     padding: 0;
    margin: 0;
+
+   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+   }
 
 &__item {
         background-color: $background-main-color;
@@ -29,11 +34,17 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 
-&:not(:last-child) {
-            margin-bottom: 30px;
-    }
+@media screen and (min-width: 768px) {
+width: 354px;
+}
 
-    }
+
+@media screen and (max-width: 767px) {
+&:not(:last-child) {
+    margin-bottom: 30px;
+ }
+}
+}
 
 
 
