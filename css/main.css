@@ -302,6 +302,7 @@ p {
   padding: 0;
   margin: 0;
   margin-bottom: auto;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .site-nav {
@@ -328,6 +329,8 @@ p {
   .site-nav__item {
     margin-bottom: 0;
     margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -359,6 +362,19 @@ p {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav__highlightning-line::after {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
+}
+
 /* стили контактов в header*/
 .header-contacts {
   list-style: none;
@@ -375,6 +391,9 @@ p {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .header-contacts__item {
@@ -402,6 +421,12 @@ p {
 }
 @media screen and (min-width: 768px) {
   .header-contacts__link1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #757575;
     font-size: 12px;
     line-height: 1.17;
@@ -419,6 +444,12 @@ p {
 @media screen and (min-width: 768px) {
   .header-contacts__link2 {
     font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .header-contacts .link1.link2:hover,
