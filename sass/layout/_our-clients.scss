@@ -1,7 +1,7 @@
                 /* стили секции Постоянные клиенты */
 
 .our-clients-title {
-     padding-top: 0;
+    padding-top: 0;
     margin-bottom: 30px;
     color: $title-main-color;
     font-weight: 700;
@@ -9,6 +9,12 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+
+@media screen and (min-width: 1200px) {
+   margin-bottom: 0;
+   margin-bottom: 50px;
+   font-size: 36px;
+}
 }
 
 .our-clients {
@@ -17,87 +23,42 @@
     flex-wrap: wrap;
     gap: 30px;
 
-
-              /* стили svg-иконок Постоянные клиенты */
+                          /* стили svg-иконок Постоянные клиенты */
 &__blocks {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 210px;
+    width: 210px;
     height: 92px;
     border: 1px solid $icon-main-color;
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     width: 226px;
-    }
+}
+
+@media screen and (min-width: 1200px) {
+     width: 170px;
+}
 
 &:hover,
 &:focus {
-border: 1px solid $accent-color;
+     border: 1px solid $accent-color;
 }
 }
 
+
 &__icon {
-fill: $icon-main-color;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $icon-main-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .our-clients__blocks:hover &,
 .our-clients__blocks:focus & {
-fill: $accent-color;
+    fill: $accent-color;
 }
 }
 }
 
 
-
-// .our-clients-title {
-//     margin-bottom: 0;
-//     padding-top: 0;
-//     margin-bottom: 50px;
-//     color: $title-main-color;
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.17;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-// }
-
-// .our-clients {
-//     display: flex;
-
-//     &__card:not(:last-child) {
-//         margin-right: 30px;
-//     }
-
-//     /* стили svg-иконок Постоянные клиенты */
-//     &__blocks {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         width: 170px;
-//         height: 92px;
-//         border: 1px solid $icon-main-color;
-//         border-radius: 4px;
-//         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//         &:hover,
-//         &:focus {
-//             border: 1px solid $accent-color;
-//         }
-//     }
-
-//     &__icon {
-//         fill: $icon-main-color;
-//         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//         .our-clients__blocks:hover &,
-//         .our-clients__blocks:focus & {
-//             fill: $accent-color;
-//         }
-//     }
-
-
-// }
 

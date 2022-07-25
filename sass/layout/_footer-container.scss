@@ -3,35 +3,21 @@
 .footer {
     padding: 60px 0;
     background-color: #2f303a;
-   
 }
 
-/* микс */
+     /* микс */
 .container--footer {
-display: block;
-align-items: center;
+    display: block;
+    align-items: center;
 
 @media screen and (min-width: 768px){
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
 }
-
+@media screen and (min-width: 1200px) {
+   flex-wrap: nowrap;
+   justify-content: space-between;
 }
-
-
-
-
-
-
-// .footer {
-//     padding: 60px 0;
-//     background-color: #2f303a;
-// }
-
-// /* микс */
-// .container--footer {
-//     display: flex;
-//     align-items: baseline;
-// }
+}

@@ -1,12 +1,18 @@
+
+
 .container--header {
     position: relative;
     display: flex;
     align-items: center;
     min-height: 60px;
 
-    // @media screen and (min-width: 768px) {
-    //     min-height: 80px;
-    //     }
-          
+@media screen and (min-width: 768px) {
+    min-height: 80px;
+}
+
+// @media screen and (min-width: 1200px) {
+//     display: block;
+// }
+
 }
 
