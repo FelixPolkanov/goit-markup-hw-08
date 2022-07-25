@@ -5,7 +5,7 @@
    text-align: center;
 
 @media screen and (min-width: 1200px) {
-        text-align: start;
+    text-align: start;
 }
 
 
@@ -22,7 +22,7 @@
 .footer-form {
     display: block;
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     display: flex;  
 }
 
@@ -42,6 +42,7 @@
 
 @media screen and (min-width: 768px) {
     width: 450px;
+    
 }
     
 @media screen and (min-width: 1200px) {
