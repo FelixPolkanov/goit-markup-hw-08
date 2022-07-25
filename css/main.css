@@ -279,7 +279,7 @@ p {
   color: #292929;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .header-dropmenu {
     display: none;
     position: absolute;
