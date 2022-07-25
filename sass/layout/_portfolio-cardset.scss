@@ -2,20 +2,51 @@
 /* разметка сетки карточек портфолио */
 
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
     padding: 0;
     margin: 0;
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    gap: 30px;
+}
+
+@media screen and (min-width: 1200px) {
     margin-left: calc(-1 * $portfolio-list-gap);
     margin-top: calc(-1 * $portfolio-list-gap);
+}
+
 
 &__card {
-        margin-left: $portfolio-list-gap;
-        margin-top: $portfolio-list-gap;
-        flex-basis: calc((100% - 90px) / 3);
-        border: 1px solid #eeeeee;
-        background: #ffffff;
+    border: 1px solid #eeeeee;
+    background: #ffffff;
+    width: 450px;
+
+@media screen and (min-width: 768px) {
+        width: 354px;
+       
 }
+
+@media screen and (min-width: 1200px) {
+    width: 370px;
+
+}
+ @media screen and (min-width: 1200px) {
+    margin-left: $portfolio-list-gap;
+    margin-top: $portfolio-list-gap;
+    flex-basis: calc((100% - 90px) / 3); 
+}
+ 
+}
+@media screen and (max-width: 767.9px) {
+&__card:not(:last-child) {
+    margin-bottom: 30px;
+}
+}
+
+
 
 /* стили выпадающего оверлея на карточку портфолио */
 &__overlay-hide {
@@ -29,8 +60,8 @@
 
 &:hover,
 &:focus {
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 }
 }
@@ -38,7 +69,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 .portfolio-overlay {
     position: absolute;
     width: 100%;
-    height: 294px;
+    height: 404px;
     top: 0;
     left: 0;
     transform: translateY(100%);
@@ -52,14 +83,48 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 
 &__text {
     display: block;
-    padding-top: 63px;
+    padding-top: 77px;
+    padding-bottom: 77px;
     padding-right: 24px;
-    padding-bottom: 63px;
     padding-left: 24px;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: $text-secondary-color;
+
+@media screen and (min-width: 768px) {
+    padding-top: 49px;
+    padding-bottom: 77px;
+ 
+}
+
+@media screen and (min-width: 1200px) {
+    padding-top: 63px;
+    padding-bottom: 63px;
+ 
 }
 }
+}
+
+
+
+
+
+// /* разметка сетки карточек портфолио */
+
+// .portfolio {
+//     display: flex;
+//     flex-wrap: wrap;
+//     padding: 0;
+//     margin: 0;
+//     margin-left: calc(-1 * $portfolio-list-gap);
+//     margin-top: calc(-1 * $portfolio-list-gap);
+
+//     &__card {
+//         margin-left: $portfolio-list-gap;
+//         margin-top: $portfolio-list-gap;
+//         flex-basis: calc((100% - 90px) / 3);
+//         border: 1px solid #eeeeee;
+//         background: #ffffff;
+//     }
 

@@ -1,6 +1,15 @@
-/* эффект присутствия в меню на портфолио  */
 
-.site-nav__highlightning--portfolio::after {
-    content: '';
-    width: 78px;
+/* эффект присутствия в меню на портфолио  */
+.site-nav__highlightning-line--portfolio::after {
+
+@media screen and (min-width: 768px) {
+        content: '';
+        position: absolute;
+        width: 78px;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background-color: $accent-color;
+        border-radius: 2px;
+}
 }

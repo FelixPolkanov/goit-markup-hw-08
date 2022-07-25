@@ -9,8 +9,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    position: relative;
-
+   
  @media screen and (min-width: 768px) {
     display: flex;
     margin-bottom: 0;
@@ -41,6 +40,7 @@
      line-height: 1.14;
      letter-spacing: 0.02em;
      color: #212121;
+     position: relative;
 }  
 }
 
