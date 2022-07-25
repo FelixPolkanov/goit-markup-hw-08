@@ -8,17 +8,70 @@
      margin-right: auto;
      max-width: 1600px;
      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/hero-overlay.jpg');
+     url('../images/hero-backdround-images/hero480.jpg');
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
 
 @media screen and (min-width: 1200px) {
      padding: 200px 0;
-}         
+}
+}
+
+//     ретинизации фонового изображения для 2x экранов дo ширины 480px
+@media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero{
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-backdround-images/hero480@2x.jpg ');
+}
+}  
 
 
-&__title {
+//      ретинизации фонового изображения для 1x экранов с 481px дo ширины 768px
+@media screen and (min-width: 481px) {
+.hero {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-backdround-images/hero768.jpg');
+
+}
+//     ретинизации фонового изображения для 2x экранов дo ширины 768px
+@media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+.hero {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-backdround-images/hero768@2x.jpg ');
+}
+}
+}
+
+
+//      ретинизации фонового изображения для 1x экранов с 768px и више
+@media screen and (min-width: 769px) {
+.hero {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-backdround-images/hero1200.jpg');
+}
+
+//    ретинизации фонового изображения для 2x экранов с 768px и више
+@media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+.hero {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+         url('../images/hero-backdround-images/hero1200@2x.jpg ');
+}
+}
+}
+
+
+
+       
+
+
+.hero__title {
         width: 360px;
         margin-left: auto;
         margin-right: auto;
@@ -37,7 +90,7 @@
         line-height: 1.36;
 }
 }
-}
+
 
 
 
