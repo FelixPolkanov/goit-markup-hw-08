@@ -239,7 +239,15 @@
           <ul class="our-work-container list">
             <li class="our-work-container__item">
               <div class="our-work-container__thumb">
-                <img src="./images/pictures1page/img1.jpg" alt="картинка-ссылка_1" width="370" />
+                <img
+                  srcset="
+                    ./images/about-pictures/keyboard.jpg    1x,
+                    ./images/about-pictures/keyboard@2x.jpg 2x
+                  "
+                  src="./images/about-pictures/keyboard.jpg"
+                  alt="Клавиатура"
+                  width="370"
+                />
                 <div class="our-work-container__label">
                   <p class="our-work-container__label-text">Десктопные приложения</p>
                 </div>
@@ -248,7 +256,15 @@
 
             <li class="our-work-container__item">
               <div class="our-work-container__thumb">
-                <img src="./images/pictures1page/img2.jpg" alt="картинка-ссылка_2" width="370" />
+                <img
+                  srcset="
+                    ./images/about-pictures/notebook.jpg    1x,
+                    ./images/about-pictures/notebook@2x.jpg 2x
+                  "
+                  src="./images/about-pictures/notebook.jpg"
+                  alt="Ноутбук"
+                  width="370"
+                />
                 <div class="our-work-container__label">
                   <p class="our-work-container__label-text">Мобильные приложения</p>
                 </div>
@@ -257,7 +273,15 @@
 
             <li class="our-work-container__item">
               <div class="our-work-container__thumb">
-                <img src="./images/pictures1page/img3.jpg" alt="картинка-ссылка_3" width="370" />
+                <img
+                  srcset="
+                    ./images/about-pictures/laptop.jpg    1x,
+                    ./images/about-pictures/laptop@2x.jpg 2x
+                  "
+                  src="./images/about-pictures/laptop.jpg"
+                  alt="Планшет"
+                  width="370"
+                />
 
                 <div class="our-work-container__label">
                   <p class="our-work-container__label-text">Дизайнерские решения</p>
@@ -274,7 +298,37 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-container list">
             <li class="team-container__item">
-              <img src="./images/staf/staf1.jpg" alt="ДИЗАЙНЕР" width="450" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/staf-pictures/product.webp       270w,
+                    ./images/staf-pictures/product@2x.webp    540w,
+                    ./images/staf-pictures/product354.webp    354w,
+                    ./images/staf-pictures/product354@2x.webp 708w,
+                    ./images/staf-pictures/product450.webp    450w,
+                    ./images/staf-pictures/product450@2x.webp 900w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+                <img
+                  srcset="
+                    ./images/staf-pictures/product.jpg       270w,
+                    ./images/staf-pictures/product@2x.jpg    540w,
+                    ./images/staf-pictures/product354.jpg    354w,
+                    ./images/staf-pictures/product354@2x.jpg 708w,
+                    ./images/staf-pictures/product450.jpg    450w,
+                    ./images/staf-pictures/product450@2x.jpg 900w
+                  "
+                  type="image/jpg"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                  src="./images/staf-pictures/product450.jpg"
+                  alt="Продакт дизайнер"
+                  width="450"
+                  height="460"
+                  class="team-list__icon"
+                />
+              </picture>
               <div class="team-container__thumb">
                 <h3 class="team-container__employee">Игорь Демьяненко</h3>
                 <p class="team-container__position">Product Designer</p>
@@ -309,7 +363,37 @@
             </li>
 
             <li class="team-container__item">
-              <img src="./images/staf/staf2.jpg" alt="ФРОНТЕНД РАЗРАБОТЧИК" width="450" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/staf-pictures/frontend_dev.webp       270w,
+                    ./images/staf-pictures/frontend_dev@2x.webp    540w,
+                    ./images/staf-pictures/frontend_dev354.webp    354w,
+                    ./images/staf-pictures/frontend_dev354@2x.webp 708w,
+                    ./images/staf-pictures/frontend_dev450.webp    450w,
+                    ./images/staf-pictures/frontend_dev450@2x.webp 900w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+                <img
+                  srcset="
+                    ./images/staf-pictures/frontend_dev.jpg       270w,
+                    ./images/staf-pictures/frontend_dev@2x.jpg    540w,
+                    ./images/staf-pictures/frontend_dev354.jpg    354w,
+                    ./images/staf-pictures/frontend_dev354@2x.jpg 708w,
+                    ./images/staf-pictures/frontend_dev450.jpg    450w,
+                    ./images/staf-pictures/frontend_dev450@2x.jpg 900w
+                  "
+                  type="image/jpg"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                  src="./images/staf-pictures/frontend_dev450.jpg"
+                  alt="Фронтенд разработчик"
+                  width="450"
+                  height="460"
+                  class="team-list__icon"
+                />
+              </picture>
               <div class="team-container__thumb">
                 <h3 class="team-container__employee">Ольга Репина</h3>
                 <p class="team-container__position">Frontend Developer</p>
@@ -343,7 +427,38 @@
             </li>
 
             <li class="team-container__item">
-              <img src="./images/staf/staf3.jpg" alt="МАРКЕТИНГ" width="450" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/staf-pictures/marketing.webp       270w,
+                    ./images/staf-pictures/marketing@2x.webp    540w,
+                    ./images/staf-pictures/marketing354.webp    354w,
+                    ./images/staf-pictures/marketing354@2x.webp 708w,
+                    ./images/staf-pictures/marketing450.webp    450w,
+                    ./images/staf-pictures/marketing450@2x.webp 900w
+                  "
+                  type="image/webp"
+                  staf
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+                <img
+                  srcset="
+                    ./images/staf-pictures/marketing.jpg       270w,
+                    ./images/staf-pictures/marketing@2x.jpg    540w,
+                    ./images/staf-pictures/marketing354.jpg    354w,
+                    ./images/staf-pictures/marketing354@2x.jpg 708w,
+                    ./images/staf-pictures/marketing450.jpg    450w,
+                    ./images/staf-pictures/marketing450@2x.jpg 900w
+                  "
+                  type="image/jpg"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                  src="./images/staf-pictures/marketing450.jpg"
+                  alt="Маркетолог"
+                  width="450"
+                  height="460"
+                  class="team-list__icon"
+                />
+              </picture>
               <div class="team-container__thumb">
                 <h3 class="team-container__employee">Николай Тарасов</h3>
                 <p class="team-container__position">Frontend Developer</p>
@@ -378,12 +493,43 @@
             </li>
 
             <li class="team-container__item">
-              <img src="./images/staf/staf4.jpg" alt="ЮИ ДИЗАЙНЕР" width="450" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/staf-pictures/ui_des.webp       270w,
+                    ./images/staf-pictures/ui_des@2x.webp    540w,
+                    ./images/staf-pictures/ui_des354.webp    354w,
+                    ./images/staf-pictures/ui_des354@2x.webp 708w,
+                    ./images/staf-pictures/ui_des450.webp    450w,
+                    ./images/staf-pictures/ui_des450@2x.webp 900w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+                <img
+                  srcset="
+                    ./images/staf-pictures/ui_des.jpg       270w,
+                    ./images/staf-pictures/ui_des@2x.jpg    540w,
+                    ./images/staf-pictures/ui_des354.jpg    354w,
+                    ./images/staf-pictures/ui_des354@2x.jpg 708w,
+                    ./images/staf-pictures/ui_des450.jpg    450w,
+                    ./images/staf-pictures/ui_des450@2x.jpg 900w
+                  "
+                  type="image/jpg"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                  src="./images/staf-pictures/ui_des450.jpg"
+                  alt="Юай дизайнер"
+                  width="450"
+                  height="460"
+                  class="team-list__icon"
+                />
+              </picture>
               <div class="team-container__thumb">
                 <h3 class="team-container__employee">Михаил Ермаков</h3>
                 <p class="team-container__position">Frontend Developer</p>
                 <ul class="social-networks list">
                   <li class="social-icons">
+                    staf
                     <a href="" class="social-networks__elipse">
                       <svg class="" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
