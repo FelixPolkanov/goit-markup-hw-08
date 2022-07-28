@@ -217,6 +217,8 @@ p {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  position: fixed;
+  right: 25px;
   z-index: 2;
   margin: 0;
   padding: 0;
