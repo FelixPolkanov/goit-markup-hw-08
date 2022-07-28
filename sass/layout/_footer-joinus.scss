@@ -2,7 +2,8 @@
 
 .footer-joinus {
     text-align: center;
-
+    margin-bottom: 60px;
+    
  @media screen and (min-width: 1200px) {
     text-align: start;
 }
@@ -22,7 +23,7 @@
 .footer-social-network {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+   
 
 @media screen and (min-width: 1200px) {
     margin-bottom: 0;
