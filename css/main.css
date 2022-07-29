@@ -217,8 +217,8 @@ p {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: fixed;
-  right: 25px;
+  right: 15px;
+  top: 10px;
   z-index: 2;
   margin: 0;
   padding: 0;
@@ -229,6 +229,10 @@ p {
   .button-mobmenu {
     display: none;
   }
+}
+.button-mobmenu.is-open {
+  position: fixed;
+  overflow: hidden;
 }
 .button-mobmenu .icon-close-mobmenu {
   display: none;
@@ -271,12 +275,27 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 88px;
+  margin-right: 60px;
   font-family: Raleway, sans-serif;
   color: #2196f3;
   text-decoration: none;
   font-size: 24px;
   line-height: 1.17;
+}
+@media screen and (min-width: 320px) {
+  .header__logo1 {
+    margin-right: 115px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header__logo1 {
+    margin-right: 278px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__logo1 {
+    margin-right: 88px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header__logo1 {
