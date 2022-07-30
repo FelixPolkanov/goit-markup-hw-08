@@ -1233,7 +1233,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 209.6px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -1382,6 +1382,7 @@ p {
 @media screen and (min-width: 1200px) {
   .footer-joinus {
     text-align: start;
+    margin-bottom: 0;
   }
 }
 .footer-joinus__title {
@@ -1637,7 +1638,6 @@ p {
 .portfolio__card {
   border: 1px solid #eeeeee;
   background: #ffffff;
-  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__card {
