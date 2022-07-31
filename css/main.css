@@ -1223,6 +1223,12 @@ p {
   gap: 30px;
   /* стили svg-иконок Постоянные клиенты */
 }
+@media screen and (max-width: 479.9px) {
+  .our-clients__card {
+    width: 100%;
+    max-width: calc((100% - 30px) / 2);
+  }
+}
 .our-clients__blocks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1233,12 +1239,16 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .our-clients__blocks {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .our-clients__blocks {
